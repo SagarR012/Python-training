@@ -113,11 +113,11 @@ WSGI_APPLICATION = 'student_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':     os.getenv('DB_NAME',     'bookshelf'),
-        'USER':     os.getenv('DB_USER',     'postgres'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Root@123'),
-        'HOST':     os.getenv('DB_HOST',     'localhost'),
-        'PORT':     os.getenv('DB_PORT',     '5432'),
+        'NAME': os.getenv('POSTGRES_DATABASE'),
+        'USER': os.getenv('POSTGRES_USER'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+        'HOST': os.getenv('POSTGRES_HOST'),
+        'PORT': '5432',
     }
 }
 
