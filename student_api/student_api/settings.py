@@ -35,8 +35,8 @@ SECRET_KEY = os.getenv(
     'django-insecure-student-api-dev-key-change-this-in-production'
 )
 
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+DEBUG = os.getenv('DEBUG', 'True') == 'False'
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,.vercel.app').split(',')
 
 # =============================================================================
 # INSTALLED APPS
